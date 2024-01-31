@@ -1,0 +1,204 @@
+/****** Global Styles ******/
+body {
+    /* outline: 3px dotted aquamarine; */
+    color: #3b3b3b;
+    /* default text color */
+    background-color: #daf7f6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* this is a class
+.content-wrapper {
+    /* outline: 3px dotted green; *
+    width: 1000px;
+    margin: 0 auto;
+    /* auto makes browser calc left and right margins equally. *
+    overflow: auto;
+    /* makes containers holding floating elements  expand to fit their height *
+    padding: 16px 0; */
+/* } */
+
+
+/****** Header Styles ******/
+
+header {
+    /* outline: 3px dotted red; */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+h1 {
+    /* outline: 3px dotted blue; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #f16059;
+    display: inline-block;
+    /* clear: both; */
+    margin: 0;
+    /* auto makes browser calc left and right margins equally. */
+    padding: 40px 0;
+}
+
+header img {
+    margin-right: 16px;
+}
+
+/****** Main Styles ******/
+
+main {
+    /* outline: 3px dotted blue; */
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+/* card styles */
+.card {
+    
+    margin: 30px 0;
+    overflow: auto;
+}
+
+.image {
+    float: left;
+    width: 500px;
+   height: 550px;
+}
+
+.recipe {
+    float: left;
+    padding: 20px;
+    width: 500px;
+    height: 550px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+#cookies .image {
+    background: url('../img/gluten-free-sugar-cookies.jpg'), #f9efef;
+    /* this is a path to the background image and the fallback color if the image doesn't exist */
+    background-size: cover;
+    /* background-position: center;
+    height: 800px; */
+}
+
+#pesto .image {
+    background: url('../img/nut-free-pesto.jpg'), #f9efef;
+    /* this is a path to the background image and the fallback color if the image doesn't exist */
+    background-size: cover;
+    /* background-position: center;
+    height: 800px; */
+}
+
+#salad .image {
+    background: url('../img/watermelon-salad.jpg'), #f9efef;
+    /* this is a path to the background image and the fallback color if the image doesn't exist */
+    background-size: cover;
+}
+
+/* DON'T FORGET THE DOT (.) in the class name!!!! */
+.recipe h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16059;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+
+
+.time {
+    /* outline: 3px dotted purple; */
+    margin-bottom: 5px;
+    border: 1px solid #3B3B3B;
+    overflow: auto;
+
+}
+
+/* this pertains to the div's inside the time class, specifically the  
+    .prep, .cook and .time. Therefore you can refere them as .time div or 
+    each separately in the same code block. */
+/* .time div {  is the same as the line below.*/
+.prep,
+.cook,
+.total {
+    /* outline: 5px dotted rgb(233, 10, 185); */
+    float: left;
+    padding-left: 6px;
+    width: 33.3333%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+
+.time .cook {
+    border-left: 1px solid #3B3B3B;
+    border-right: 1px solid #3B3B3B;
+}
+
+.time img {
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.time-details {
+    display: inline-block;
+}
+
+/* This specifies a different font for the text that is labeled as
+    <strong> in the HTML */
+.time strong {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/***** Column Styles ****/
+.columns {
+    /* outline: 3px dotted red; */
+    overflow: hidden;
+}
+
+.directions {
+    /* outline: 3px dotted green; */
+    float: left;
+    width: 240px;
+
+}
+
+.ingredients {
+    /* outline: 3px dotted blue; */
+    float: left;
+    width: 205px;
+    margin-right: 15px;
+}
+
+.recipe h3 {
+    /* outline: 3px dotted green; */
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #f16059;
+    text-transform: uppercase;
+    padding: 6px 0;
+    border-top: 1px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+}
+
+.ingredients ul {
+    padding-left: 15px;
+    line-height: 24px;
+    list-style: square;
+}
+
+.directions ol {
+    padding-left: 15px;
+    line-height: 22px;
+}
